@@ -107,7 +107,7 @@ function getPasswordOptions() {
   //Prompt for the character types
   var lowerCase = confirm("Include lowercase characters in password?");
   var upperCase = confirm("Include uppercase characters in password?");
-  var numeric = confirm("include nemeric characters in password?");
+  var numeric = confirm("Include numeric characters in password?");
   var special = confirm("Include special characters in password?");
 
   //Validate that at least one character type is selected
