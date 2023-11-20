@@ -115,7 +115,21 @@ function getPasswordOptions() {
     alert("At least one character type must be selected.");
     return;
   }
+
+  //Declare an object to store the user choices
+  var userPasswordOptions = {
+    passwordLength: passwordLength,
+    lowerCase: lowerCase,
+    upperCase: upperCase,
+    numeric: numeric,
+    special: special,
+  };
+
+  return userPasswordOptions;
 }
+
+//Testing if the above function works
+//getPasswordOptions();
 
 // Function for getting a random element from an array
 function getRandom(arr) {}
