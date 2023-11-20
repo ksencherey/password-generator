@@ -103,6 +103,18 @@ function getPasswordOptions() {
     );
     return;
   }
+
+  //Prompt for the character types
+  var lowerCase = confirm("Include lowercase characters in password?");
+  var upperCase = confirm("Include uppercase characters in password?");
+  var numeric = confirm("include nemeric characters in password?");
+  var special = confirm("Include special characters in password?");
+
+  //Validate that at least one character type is selected
+  if (!lowerCase && !upperCase && !numeric && !special) {
+    alert("At least one character type must be selected.");
+    return;
+  }
 }
 
 // Function for getting a random element from an array
