@@ -128,11 +128,19 @@ function getPasswordOptions() {
   return userPasswordOptions;
 }
 
-//Testing if the above function works
-//getPasswordOptions();
+//calling the getPasswordOptions funtion and logging to console for testing purposes
+//console.log(getPasswordOptions());
 
 // Function for getting a random element from an array
-function getRandom(arr) {}
+function getRandom(arr) {
+  var randomIndex = Math.floor(Math.random() * arr.length);
+  var randomElement = arr[randomIndex];
+  console.log(randomElement);
+  return randomElement;
+}
+
+//Calling getRandom function and passing in the upperCasedCharacters array to see if the random element is being parsed
+//getRandom(upperCasedCharacters);
 
 // Function to generate password with user input
 function generatePassword() {}
